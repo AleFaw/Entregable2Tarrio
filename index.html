@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bug Pairs</title>
+  <link rel="icon" type="image/x-icon" href="rec/img/icono.ico">
+  <link rel="stylesheet" href="rec/css/styles.css">
+</head>
+<body>
+  <main>
+    <!-- PANEL: MENÚ PRINCIPAL -->
+    <section id="menu" class="panel visible">
+      <img class="logo" src="./rec/img/icono.ico">
+      <h1>Juego de Emparejar Cartas</h1>
+      <div class="menu-botones">
+        <button id="btnJugar">Jugar</button>
+        <button id="btnRanking">Ver Ranking</button>
+      </div>
+    </section>
+
+    <!-- PANEL: INGRESO DE NOMBRE -->
+    <section id="pantallaNombre" class="panel">
+      <h2>Ingresa tu nombre</h2>
+      <input type="text" id="inputNombre" placeholder="Tu nombre">
+      <div class="menu-botones">
+        <button id="btnConfirmarNombre">Confirmar</button>
+        <button id="btnVolverMenu1">Volver</button>
+      </div>
+    </section>
+
+    <!-- PANEL: JUEGO -->
+    <section id="juego" class="panel">
+      <header class="hud">
+        <div>Jugador: <span id="nombreJugador"></span></div>
+        <div>Movimientos: <span id="movimientos">0</span></div>
+        <div>Tiempo: <span id="tiempo">00:00</span></div>
+      </header>
+
+      <div id="tablero" class="tablero"></div>
+
+      <footer class="menu-botones">
+        <button id="btnReiniciar">Reiniciar</button>
+        <button id="btnSalir">Salir</button>
+      </footer>
+    </section>
+
+    <!-- PANEL: RANKING -->
+    <section id="ranking" class="panel">
+      <h2>Ranking</h2>
+      <div id="podio" class="podio"></div>
+      <ul id="listaRanking"></ul>
+      <div class="menu-botones">
+        <button id="btnVolverMenu2">Volver</button>
+        <button id="btnBorrarRanking">Borrar Ranking</button>
+      </div>
+    </section>
+
+    <!-- MODAL: VICTORIA -->
+    <div id="modalVictoria" class="modal oculto">
+      <div class="modal-content">
+        <h2>🎉 ¡Ganaste!</h2>
+        <p>Tiempo: <span id="victoriaTiempo">00:00</span></p>
+        <p>Movimientos: <span id="victoriaMov">0</span></p>
+        <div class="menu-botones">
+          <button id="btnJugarOtra">Jugar otra vez</button>
+          <button id="btnVolverMenuVictory">Volver al menú</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL: CONFIRMAR SALIR -->
+    <div id="modalSalir" class="modal oculto">
+      <div class="modal-content">
+        <h3>¿Seguro que quieres salir?</h3>
+        <div class="menu-botones">
+          <button id="confirmSalir">Sí</button>
+          <button id="cancelSalir">No</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="rec/js/simulador.js"></script>
+</body>
+</html>
