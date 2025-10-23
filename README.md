@@ -48,7 +48,7 @@ El juego cuenta con animaciones, sonidos, marcador de movimientos, cronómetro, 
 
 - **Cartas**: generadas con *Gemini*  
 - **Sonidos**: obtenidos de [Pixabay Sound Effects](https://pixabay.com/es/sound-effects/)  
-- **Ícono**: `./rec/img/icono.ico`
+- **Ícono**: generado por el amigazo *Chatgpt*
 
 ---
 
@@ -63,6 +63,6 @@ El juego cuenta con animaciones, sonidos, marcador de movimientos, cronómetro, 
 Proyecto desarrollado por **Alejo Tarrio** para el curso de **JavaScript - Coderhouse (Comisión #80855)**.
 
 <p align="center">
-  <strong>🐞 ¡Gracias por jugar Bug Pairs! 🃏</strong><br>
+  <strong>🐞 ¡Gracias por jugar Bug Pairs profeeeeee! 🃏</strong><br>
   <em>“A veces, los errores también hacen buenas parejas.”</em>
 </p>
